@@ -78,4 +78,5 @@ theme: archer
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
+  repository: https://github.com/Eggwardhan/eblog
   branch: master
