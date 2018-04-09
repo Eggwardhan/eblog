@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>django note | Eggward_Han</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="一个阴暗的小角落">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="django note | Eggward_Han">
+    <meta name="twitter:description" content="一个阴暗的小角落">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="django note | Eggward_Han">
+    <meta property="og:description" content="一个阴暗的小角落">
+
+    
+    <meta name="author" content="Eggward">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Eggward_Han" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://www.eggwardhan.com/2018/04/08/2018-03-05-django-example-note/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Eggward_Han 的主页"><img src="/images/favicon.ico" width="80" alt="Eggward_Han logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Eggward_Han">Eggward_Han</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">爱玩儿的码农</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">一个阴暗的小角落</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/Eggwardhan" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/eggwardhan" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-04-09T05:03:57.690Z" class="post-list__meta--date date">2018-04-08</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/django/">django</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">django note</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="Tips—-creat-an-independence-Py-environment"><a href="#Tips—-creat-an-independence-Py-environment" class="headerlink" title="Tips—-creat an independence Py environment"></a>Tips—-creat an independence Py environment</h2><p>I strongly recommend you using <strong>virtualenv</strong> .In this way  ,you can use different version of package to correspond to different program</p>
+
+
+$pip install virtualenv
+$virtualenv my_env
+//how to locate ｐｙ３
+$ *which python3*
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+$ *virtualenv my_env -p
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3*
+source my_env/bin/activate  //activate your virtualenv  ,and use **deactive** to stop.
+         //Along with *virtualenvwrapper* tool,you can enjoy more conveniencec.
+
+
+<h3 id="QuerySet-and-managers"><a href="#QuerySet-and-managers" class="headerlink" title="QuerySet and managers"></a>QuerySet and managers</h3>
+>>> from django.contrib.auth.models import User
+>>> from blog.models import Post
+>>> user = User.objects.get(username='admin')  #get方法允许你从数据库中取回唯一对象
+>>> post = Post.objects.create(title='One more post',
+                        slug='one-more-post',
+                        body='Post body.',
+                        author=user)
+>>> post.save()
+
+
+<p>ＯＲＭ是基于queryset的。QuerySet是从你的数据中按条件采集对象。每个Ｄｊａｎｇｏ　models　至少有一个manager,默认叫做objects.若要获取每一个对象</p>
+<p>>&gt;&gt;　all_posts= Post.objects.all()</p>
+<hr>
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h3><p>过滤查询集的方法　</p>
+<p>>&gt;&gt;Post.objects.filter(publish__year=2018)</p>
+<p>或者多个字段过滤=<br>
+>>>Post,objects.filter(publish__year=2018,author__username='admin')
+或者
+
+>>>Post,objects.filter(publish__year=2018).filter(author__username='admin')
+</p>
+<h3 id="exclude"><a href="#exclude" class="headerlink" title="exclude()"></a>exclude()</h3><p>排除　　方法同上</p>
+<h3 id="order-by"><a href="#order-by" class="headerlink" title="order_by(  )"></a>order_by(  )</h3><p>Post.objects.order_by(‘title’)# 默认升序，可加负号来指定降序</p>
+<h3 id="delete"><a href="#delete" class="headerlink" title="delete()"></a>delete()</h3><p>获取对象后使用</p>
+<hr>
+<h3 id="添加模型管理器"><a href="#添加模型管理器" class="headerlink" title="添加模型管理器"></a>添加模型管理器</h3><ol>
+<li>添加额外 manager,  如 Post.object.my_manager()<br>2.　继承 manager , Post.my_manager.all()</li>
+</ol>
+
+class PublishedManager(models.Manager):
+  def get_queryset(self):
+    return super(PublishedManager,
+                 self).get_queryset().filter(status='published')
+
+class Post(models.Model):
+    #...
+    objects = models.Manager() #the default managers
+    published = PublishedManager() #Our custom manager                 
+
+<h3 id="构建列和详情视图-views"><a href="#构建列和详情视图-views" class="headerlink" title="构建列和详情视图(views)"></a>构建列和详情视图(views)</h3><p>一个ｄｊａｎｇｏ视图就是一个ｐｙ方法，它可以接受一个ｗｅｂ请求然后返回一个web响应。在ｖｉews中通过所有的逻辑处理返回期望的响应。</p>
+<p>创建views然后为每个视图定义一个Ｕｒｌ模式，我们将会创建ＨＴＭＬ模板来渲染这些视图生成的数据。每一个视图都会渲染模板传递变量给它然后会返回一个经渲染输出的ＨＴＴＰ响应。</p>
+<p>编辑应用下的views.py</p>
+
+
+from django.shortcuts import render,get_object_or_404
+from .models import post
+def post_list(request):
+    posts =Post.published.all()
+    return render(request,
+      'blog/post/list.html',
+      {'posts':posts})
+
+<p>post_list视图将request对象作为唯一参数。！所有的视图都需要有这个参数。获我们先获取了所有状态为已发布的帖子，通过之前创建的 published manager.<br>最后　，我们使用ｄｊａｎｇｏ提供的render()通过给予的模板(template)来渲染帖子列<br>这个函数将request对象作为参数，模板（template）路径以及变量来渲染的给予的模板（template）。它返回一个渲染文本（一般是HTML代码）HttpResponse对象。render()方法考虑到了请求内容，这样任何模板（template）内容处理器设置的变量都可以带入给予的模板（template）中。</p>
+<p>添加如下代码到views.py文件中来展示单独的帖子：</p>
+
+
+def post_detail(request, year, month, day, post):
+    post = get_object_or_404(Post, slug=post,
+                                   status='published',
+                                   publish__year=year,
+                                   publish__month=month,
+                                   publish__day=day)
+    return render(request,
+                  'blog/post/detail.html',
+                  {'post': post})
+
+
+<p>这是一个帖子详情视图（view）。这个视图（view）使用year，month，day以及post作为参数通过给予slug和日期来获取到一篇已经发布的帖子。<em>请注意</em>，当我们创建Post模型（model）的时候，我们给slgu字段添加了unique_for_date参数。这样我们可以确保在给予的日期中只有一个帖子会带有一个slug，因此，我们能通过日期和slug取回单独的帖子。</p>
+<p>在这个详情视图（view）中，我们通过使用get_object_or_404()快捷方法来检索期望的Post。这个函数能取回匹配给予的参数的对象，或者当没有匹配的对象时返回一个HTTP 404（Not found）异常。最后，我们使用render()快捷方法来使用一个模板（template）去渲染取回的帖子。</p>
+<h3 id="Add-URL-patterns-to-your-views"><a href="#Add-URL-patterns-to-your-views" class="headerlink" title="Add URL patterns to your views"></a>Add URL patterns to your views</h3><p>一个url模式是由一个ｐｙ正则表达式一个ｖｉｅｗ一个全项目范围内的命名组成，Django在运行中会遍历所有ＵＲＬ模式直到地一个匹配请求ＵＲＬ才停止。之后导入匹配的URL模式的view并执行<br>在blog应用下创建urls.py<br>
+
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    # post views
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<post>[-\w]+)/$',
+        views.post_detail,
+        name='post_detail'),
+]
+
+<br>第一条Url无参，它映射到post_list view。第二条带上４个参数映射。</post></day></month></year></p>
+<p>将blog中的ｕｒｌ模式包含到主项目的主url模式中编辑你的项目中的ｍｙｓｉｔｅ文件夹中的urls.py文件</p>
+
+
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^blog/', include('blog.urls',
+        namespace='blog',
+        app_name='blog')),
+]
+
+
+
+<h4 id="add-templates-to-views"><a href="#add-templates-to-views" class="headerlink" title="add templates to views"></a>add templates to views</h4>
+
+templates/
+    blog/
+        base.html
+        post/
+            list.html
+            detail.html
+
+
+
+<p>创建模板目录结构如上　base.html文件会包含站点主要的HTML结构以及分割内容区域和一个导航栏。list.html detail.html会继承base.html文件来渲染各自的blog帖子列和view<br>django 有一个强大的templates语言允许你指定数据的如何进行展示。基于模板标签，如
+
+{%tag%},{{variable}}以及templates filters,可以对变量进行过滤,如{{variable|filter}}。你可以访问django documentation ref/templates/builtins/找到内置的所有templates tags and filters.<br>添加base.html文件并添加代码</p>
+
+
+{% load staticfiles %}   //加载django.contrib.staticfiles应用提供的static{% raw %}files模板标签　，then　你可以在template中使用{%static%}模板过滤器－》包含一些静态文件如css。
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static " css="" blog.css"="" %}"="" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    {% block content %}　　　　//{%block%}标签　定义一个区块继承模板
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    <h2>My blog</h2>
+      <p>This is my blog.</p>
+  </div>
+</body>
+</html>
+
+{% endraw %}      
+<p>编辑post/list.html文件</p>
+{% raw %}
+{% extends "blog/base.html" %} //继承base.html的template　然后在title 和content　block　中填充内容
+
+{% block title %}My Blog{% endblock %}
+
+{% block content %}
+  <h1>My Blog</h1>
+  {% for post in posts %}　　　//循环迭代来展示内容等
+    <h2>
+      <a href="{{ post.get_absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <p class="date">
+      Published {{ post.publish }} by {{ post.author }}
+    </p>
+    {{ post.body|truncatewords:30|linebreaks }}　　　　//filters １号truncatewords用来限制内容缩短于一定的字数内　　２号linebreaks转换内容中的换行符为HTML的换行符
+  {% endfor %}
+{% endblock %}
+{% endraw %}
+<p>然后是detail.html文件</p>
+{% raw %}
+{% extends "blog/base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ post.title }}</h1>
+  <p class="date">
+    Published {{ post.publish }} by {{ post.author }}
+  </p>
+  {{ post.body|linebreaks }}
+{% endblock %}
+
+{% endraw %}
+<h4 id="添加页码"><a href="#添加页码" class="headerlink" title="添加页码"></a>添加页码</h4>{% raw %}
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+def post_list(request):
+    object_list = Post.published.all()
+    paginator = Paginator(object_list, 3) # 3 posts in each page
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range deliver last page of results
+        posts = paginator.page(paginator.num_pages)
+    return render(request,
+                  'blog/post/list.html',
+                  {'page': page,
+                   'posts': posts})
+{% endraw %}
+<p>How  Paginator works:</p>
+<ul>
+<li>希在每页中显示的对象数量来实例化Paginator类</li>
+<li>获取到page GET参数来指明页数</li>
+<li>通过调用page()方法在期望的页面中获得了对象。</li>
+<li>如果page获得的参数不是一个整数　，我们就返回第一页的结果。如果这个参数数字超出了最大的页数，我们就展示最后一页的结果</li>
+<li>我们传递页数并获取对象给 template</li>
+</ul>
+<p>创建template来展示分页处理，它可以被任意的模板包含来使用分页。在blog　应用的templates文件夹下创建一个新文件 pagination.html　<br>{% raw %}
+<div class="pagination">
+  <span class="step-links">
+    {% if page.has_previous %}
+      <a href="?page={{ page.previous_page_number }}">Previous</a>
+    {% endif %}
+    <span class="current">
+      Page {{ page.number }} of {{ page.paginator.num_pages }}.
+    </span>
+      {% if page.has_next %}
+        <a href="?page={{ page.next_page_number }}">Next</a>
+      {% endif %}
+  </span>
+</div>
+{% endraw %}<br>为了渲染上一页与下一页的链接并且展示当前页面和所有页面的结果，这个分页模板（template）期望一个Page对象。让我们回到blog/post/list.html模板（tempalte）中将pagination.html模板（template）包含在{% raw %}{% content %}{% endraw %}区块（block）中，传递给模板的Ｐａｇｅ对象叫做posts，我们将分页模板包含在帖子列模板中指定参数来对它进行正确的渲染。这种方法你可以反复使用，用你的分页模板对同的models views进行分页处理如下所示：<br>{% raw %}
+{% block content %}
+  ...
+  {% include "pagination.html" with page=posts %}
+{% endblock %}
+{% endraw %}</p>
+<h3 id="基于类的views"><a href="#基于类的views" class="headerlink" title="基于类的views"></a>基于类的views</h3><p><strong>因为一个视图view的调用就是得到一个web请求并且返回一个web响应</strong>，你可以将你的view定义成类方法。DJango为此定义了基础的view类。他们都url从view类继承而来，view类可以操控http方法调度以及其他功能。这是一个可替代的方法来创建你的views.<br>我们准备通过Django提供的通用ListView使我们的Post_list　view转变为一个基于类的视图。这个基础view允许你　对任意的对象进行排列。<br>编辑blog应用下的view.py<br>{% raw %}
+from django.views.generic import ListView
+class PostListView(ListView):
+     queryset = Post.published.all()   #特定的查询集(QuerySet)代替取回所有的对象。代替定义一个queryset属性，我们可以指定model =Post然后Django将会构建Post.object.all()查询集(queryset)给我们
+     context_object_name ='posts'　　#使用环境变量posts给查询结果。如果我们不指定任意的context_object_name默认的变量将会是object_list.
+     paginate_by = 3　　　　　　　　#对结果分页处理每页只显示３对象
+     template_name = 'blog/post/list.html'　　　#使用定制的template来渲染页面　如果不设置默认的将会使用blog/post_list.html
+
+{% endraw %}<br>打开blog应用下的urls.py注释到之前的post_listURL模式，在在之后添加一个新的URL模式来使用PostlistView类<br>{% raw %}
+urlpatterns =[
+      #post views
+      #url(r'^$',views.post_list,name='post_list'),
+      url(r'^$',views.PostListView.as_view(),name='post_list'),
+      url(r'^(?<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/'\
+          r'(?P<post>[-\w]+)/$',
+          views.post_detail,
+          name='post_detail'),
+]
+{% endraw %}<br>为了保持分页处理能工作，我们必须将正确的页面传递给template。Django的ListView通过叫做Page_obj的变量来传递被选择的页面，所以你必须编辑你的Post_list_html template去包含使用了正确的变量的分页处理<br>{% raw %}
+{% include "pagination.html" with page =page_obj %}
+{% endraw %}</post></day></month></year></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/01/27/2018-1-25-product-talk/" title="工程师/不止于写的一手好Code">工程师/不止于写的一手好Code</a></h2>
+                <p class="excerpt">
+                
+                前言
+
+我们一定要有一个坚定的信念，相信整个世界终究是为技术所驱动的。任何工业自动化程度会越来越高，最后人处理的就是信息和知识。
+As for me ，处于前期，每天的学习是最最重要的。把自己想想成一个app，一串代码，今天的版本一定要比明天更好，明天的版本肯定会比今天更好。
+And ，学产品，如果
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-01-27T11:27:26.917Z" class="post-list__meta--date date">2018-01-27</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/thought/">thought</a>
+</span><a class="btn-border-small" href="/2018/01/27/2018-1-25-product-talk/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Eggward - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
